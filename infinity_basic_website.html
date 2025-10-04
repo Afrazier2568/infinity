@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infinity</title>
+  <style>
+    :root {
+      --ink: #0a0a0a;
+      --bg: #ffffff;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      min-height: 100svh;
+    }
+    .wrap {
+      text-align: center;
+      padding: 2rem;
+      animation: fadeUp .7s ease-out both;
+    }
+    .logo {
+      width: clamp(80px, 18vw, 180px);
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin: 0.25rem 0 0.75rem;
+      letter-spacing: 0.01em;
+      font-weight: 700;
+    }
+    .small {
+      font-size: 0.8rem;
+      opacity: 0.6;
+      margin-top: 2rem;
+    }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(6px);} to { opacity: 1; transform: translateY(0);} }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <!-- Proper infinity symbol -->
+    <svg class="logo" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+      <path d="M20,50 C20,20 60,20 100,50 C140,80 180,80 180,50 C180,20 140,20 100,50 C60,80 20,80 20,50 Z" fill="none" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <h1>Exploring Infinite Possibilities</h1>
+    <p class="small">Listings soon</p>
+  </main>
+</body>
+</html>
